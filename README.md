@@ -18,11 +18,11 @@ composer require :vendor/:package_name
 
 ## Usage
 
-In your dashboard view you use the `livewire:my-tile` component.
+In your dashboard view you use the `livewire:github` component.
 
 ```html
 <x-dashboard>
-    <livewire:my-tile position="e7:e16" />
+    <livewire:github position="e7:e16" />
 </x-dashboard>
 ```
 

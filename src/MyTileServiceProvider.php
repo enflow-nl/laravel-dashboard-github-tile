@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace Enflow\Dashboard\Tile\Github;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
@@ -16,11 +16,11 @@ class MyTileServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard-my-tile'),
-        ], 'dashboard-my-tile-views');
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard-github'),
+        ], 'dashboard-github-views');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-my-tile');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-github');
 
-        Livewire::component('my-tile', MyTileComponent::class);
+        Livewire::component('github', GithubComponent::class);
     }
 }

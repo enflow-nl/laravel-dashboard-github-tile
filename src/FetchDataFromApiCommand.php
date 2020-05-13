@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace Enflow\Dashboard\Tile\Github;
 
 use Illuminate\Console\Command;
 
