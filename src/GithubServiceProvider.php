@@ -6,7 +6,7 @@ use Enflow\Dashboard\Tile\Github\Console\Commands\FetchGithubPullRequestsCommand
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
-class MyTileServiceProvider extends ServiceProvider
+class GithubServiceProvider extends ServiceProvider
 {
     public function boot()
     {
