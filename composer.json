@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^7.4",
+        "knplabs/github-api": "^2.14",
         "spatie/laravel-dashboard": "^1.0"
     },
     "require-dev": {
@@ -43,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Enflow\\Dashboard\\Tile\\Github\\MyTileServiceProvider"
+                "Enflow\\Dashboard\\Tile\\Github\\GithubServiceProvider"
             ]
         }
     },

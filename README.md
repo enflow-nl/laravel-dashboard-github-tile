@@ -1,19 +1,19 @@
-# A short description of the tile
+# A short description of the github tile
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor/:package_name/run-tests?label=tests)](https://github.com/:vendor/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
 
-A friendly explanation of what your tile does.
-
 This tile can be used on [the Laravel Dashboard]https://docs.spatie.be/laravel-dashboard).
+
+It uses the github API to fetch in this case merged pull requests for the laravel framework 
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require :vendor/:package_name
+composer require enflow/spatie-dashboard-github-tile
 ```
 
 ## Usage
@@ -22,8 +22,13 @@ In your dashboard view you use the `livewire:github` component.
 
 ```html
 <x-dashboard>
-    <livewire:github position="e7:e16" />
+    <livewire:github position="e5:e12" />
 </x-dashboard>
+```
+
+Add the following command in ```app\Console\Kernel.php``` 
+```
+$schedule->command(FetchGithubPullRequestsCommand::class)->hourly();
 ```
 
 ## Testing

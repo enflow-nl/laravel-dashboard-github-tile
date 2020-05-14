@@ -2,6 +2,7 @@
 
 namespace Enflow\Dashboard\Tile\Github;
 
+use Enflow\Dashboard\Tile\Github\Console\Commands\FetchGithubPullRequestsCommand;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
@@ -11,7 +12,7 @@ class MyTileServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                FetchDataFromApiCommand::class,
+                FetchGithubPullRequestsCommand::class,
             ]);
         }
 
