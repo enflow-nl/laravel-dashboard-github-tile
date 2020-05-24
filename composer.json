@@ -1,13 +1,13 @@
 {
-    "name": "enflow/spatie-dashboard-github-tile",
-    "description": "Spatie dashboard tile using github API",
+    "name": "enflow/laravel-dashboard-github-tile",
+    "description": "Laravel Dashboard dashboard tile using github API",
     "keywords": [
         "enflow",
         "dashboard",
         "tile",
         "github-api"
     ],
-    "homepage": "https://github.com/enflow-nl/spatie-dashboard-github-tile",
+    "homepage": "https://github.com/enflow-nl/laravel-dashboard-github-tile",
     "license": "MIT",
     "authors": [
         {
